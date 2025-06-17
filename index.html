@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👑 Calculadora de Notas de Princesas ✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="sparkles"></div>
+    <div class="container">
+        <header class="header">
+            <h1>👑 Calculadora Mágica de Notas ✨</h1>
+            <p>🌸 Descubre si nuestras princesas pasan la materia 🌸</p>
+        </header>
+
+        <div class="students-container">
+            <!-- Estudiante 1 -->
+            <div class="student-card">
+                <div class="student-header">
+                    <h2>👸 Princesa 1 💖</h2>
+                    <div class="crown">👑</div>
+                </div>
+
+                <div class="input-group">
+                    <label>🌟 Nombre de la Princesa:</label>
+                    <input type="text" id="student1-name" placeholder="Escribe el nombre aquí ✨">
+                </div>
+
+                <div class="grades-section">
+                    <h3>📚 Notas Mágicas (0.0 - 5.0) ✨</h3>
+                    <div class="grades-grid">
+                        <div class="grade-input">
+                            <label>🌸 Nota 1:</label>
+                            <input type="number" id="grade1-1" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                        <div class="grade-input">
+                            <label>🦄 Nota 2:</label>
+                            <input type="number" id="grade1-2" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                        <div class="grade-input">
+                            <label>🌺 Nota 3:</label>
+                            <input type="number" id="grade1-3" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                        <div class="grade-input">
+                            <label>🎀 Nota 4:</label>
+                            <input type="number" id="grade1-4" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                        <div class="grade-input">
+                            <label>💎 Nota 5:</label>
+                            <input type="number" id="grade1-5" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result" id="result1">
+                    <div class="average">Promedio: <span id="average1">--</span></div>
+                    <div class="status" id="status1">💫 Ingresa las notas para ver el resultado 💫</div>
+                </div>
+            </div>
+
+            <!-- Estudiante 2 -->
+            <div class="student-card">
+                <div class="student-header">
+                    <h2>👸 Princesa 2 💖</h2>
+                    <div class="crown">👑</div>
+                </div>
+
+                <div class="input-group">
+                    <label>🌟 Nombre de la Princesa:</label>
+                    <input type="text" id="student2-name" placeholder="Escribe el nombre aquí ✨">
+                </div>
+
+                <div class="grades-section">
+                    <h3>📚 Notas Mágicas (0.0 - 5.0) ✨</h3>
+                    <div class="grades-grid">
+                        <div class="grade-input">
+                            <label>🌸 Nota 1:</label>
+                            <input type="number" id="grade2-1" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                        <div class="grade-input">
+                            <label>🦄 Nota 2:</label>
+                            <input type="number" id="grade2-2" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                        <div class="grade-input">
+                            <label>🌺 Nota 3:</label>
+                            <input type="number" id="grade2-3" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                        <div class="grade-input">
+                            <label>🎀 Nota 4:</label>
+                            <input type="number" id="grade2-4" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                        <div class="grade-input">
+                            <label>💎 Nota 5:</label>
+                            <input type="number" id="grade2-5" min="0" max="5" step="0.1" placeholder="0.0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result" id="result2">
+                    <div class="average">Promedio: <span id="average2">--</span></div>
+                    <div class="status" id="status2">💫 Ingresa las notas para ver el resultado 💫</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculate-section">
+            <button id="calculate-btn" class="magic-button">
+                ✨ Calcular Resultados Mágicos ✨
+            </button>
+        </div>
+
+        <div class="info-section">
+            <div class="info-card">
+                <h3>📋 Información Importante 👑</h3>
+                <p>🌟 <strong>Nota mínima para pasar:</strong> 3.6</p>
+                <p>🌟 <strong>Nota máxima:</strong> 5.0</p>
+                <p>🌟 <strong>Se calculan 5 notas por princesa</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
